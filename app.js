@@ -9,7 +9,10 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin:'*',
+    allowedHeaders: ['Content-Type', 'Authorization'], 
+}));
 
 const __filName = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filName);

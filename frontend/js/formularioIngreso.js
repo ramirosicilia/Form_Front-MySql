@@ -35,7 +35,7 @@ formularioIngreso.addEventListener("submit", async (e) => {
     formData.append("nombre",inputNombre) 
     formData.append("apellido",inputApellido)
     formData.append("email",emailEmpleado)
-    formData.append("usuarios",usuarioEmpleado)
+    formData.append("usuario",usuarioEmpleado)
     formData.append("contrasena",usuarioContraseña)
     formData.append("imagen",inputImagen)
 
@@ -64,7 +64,7 @@ formularioIngreso.addEventListener("submit", async (e) => {
       alert(data.error);
     } 
 
-      alert(`Por favor, ${data} verifique su email para continuar`); 
+      alert(`Por favor, ${data.nombre} verifique su email para continuar`); 
 
       // Detectar el dominio del correo
       const emailDomain = emailEmpleado.split('@')[1]; 
