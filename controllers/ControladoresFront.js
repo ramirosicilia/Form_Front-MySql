@@ -41,7 +41,7 @@ dotenv.config()
    const response= await fetch(`${urlBack}/obtener-info`)  
    let data=await response.json()
  
-   res.render('pages',{users:data.usuario})
+   res.render('pages',{users:data.usuarios})
 
  }  
 

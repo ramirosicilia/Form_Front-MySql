@@ -93,7 +93,7 @@ formularioIngreso.addEventListener("submit", async (e) => {
     
    catch (err) {
     console.log("Error al enviar los datos:", err);
-    alert("Usuario o email ya existe, por favor intente nuevamente");
+    alert("hubo un error en la conexion, vamos no te desanimes!!!");
   }
 
   e.target.reset(); // Resetea el formulario después de enviar

@@ -24,11 +24,12 @@ import { urlBackend } from "./variablesEntorno.js";
 
   try {
       // Enviar los datos como JSON en el cuerpo de la solicitud
-      const responseEliminar = await fetch(`${urlBackend}/eliminar-user?usuarioDelete=${inputUser}&passwordDelete=${inputPass}`, {
+      const responseEliminar = await fetch(`${urlBackend}/eliminar-user?usuarioDelete=${inputUser}`, {
           method: "DELETE", // Puedes usar POST si prefieres
           headers: {
               "Content-Type": "application/json"
-          },
+          },  
+          body:JSON.stringify({password:inputPass})
           
       });
 
