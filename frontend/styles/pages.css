@@ -167,4 +167,89 @@ button{
     font-size: 14px;
     border: none; 
 
+} 
+
+
+@media (max-width: 1399.98px) {
+    .info {
+        font-size: 1.2rem;
+    } 
+    .container__session {
+        width: 40%; /* Ajuste para pantallas medianas */
+    }
+}
+
+/* Pantallas menores a 1200px */
+@media (max-width: 1199.98px) { 
+    .container__session {
+        width: 40%; /* Ajuste para pantallas medianas */
+    }
+    
+    .imagen__logeo {
+        width: 250px;
+        height: 250px;
+    }
+    .info {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas menores a 992px */
+@media (max-width: 991.98px) { 
+    .contenedor__pagina { 
+        display:"flex";
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor {
+        width: 95%;
+    }
+    .header h2 {
+        font-size: 2rem;
+    }
+    .container__session {
+        width: 50%; /* Ajuste para pantallas más pequeñas */
+    }
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 767.98px) {
+    .contenedor__pagina {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagen__logeo {
+        width: 200px;
+        height: 200px;
+    }
+    .info {
+        width: 90%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .container__session {
+        width: 80%; /* Ajusta el ancho */
+        padding: 1.5rem;
+    }
+}
+
+/* Pantallas menores a 576px */
+@media (max-width: 575.98px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    .button_style {
+        font-size: 1rem;
+        padding: .2rem 2rem;
+    }
+    .imagen__logeo {
+        width: 150px;
+        height: 150px;
+    }
+    .container__session {
+        width: 90%; /* Más compacto */
+        padding: 1rem;
+    }
 }
